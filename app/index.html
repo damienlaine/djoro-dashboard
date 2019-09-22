@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="djoroDashboard" class="no-js">
+<head>
+
+    <!-- start: Meta -->
+    <meta charset="utf-8">
+    <title>ACME Dashboard - Perfect Bootstrap Admin Template</title>
+    <meta name="description" content="ACME Dashboard Bootstrap Admin Template.">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="ACME, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <!-- end: Meta -->
+
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- end: Mobile Specific -->
+
+
+
+    <!-- start: CSS -->
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="djoroDashboard.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="assets/css/retina.min.css" rel="stylesheet">
+    <!-- end: CSS -->
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <link href="assets/css/ie.css" rel="stylesheet">
+    <![endif]-->
+
+    <!--[if IE 9]>
+        <link id="ie9style" href="assets/css/ie9.css" rel="stylesheet">
+    <![endif]-->
+
+    <!-- start: Favicon and Touch Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <!-- end: Favicon and Touch Icons -->
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".sidebar-nav.nav-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span>Thermlabs</span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- start: Main Menu -->
+
+    <div class="container">
+        <div class="row">
+
+            <div id="sidebar-left" class="col-sm-1">
+                <div class="nav-collapse sidebar-nav collapse navbar-collapse bs-navbar-collapse">
+                    <ul class="nav nav-tabs nav-stacked main-menu">
+                        <li><a href="#/"><i class="icon-dashboard"></i><span class="hidden-sm"> Dashboard</span></a></li>
+                        <li>
+                            <a class="dropmenu" href="#/campaigns"><i class="icon-edit"></i><span class="hidden-sm"> Campagnes</span> <span class="badge badge-success">3</span></a>
+                            <ul>
+                                <li><a class="submenu" href="#/campaigns-new"><i class="icon-edit"></i><span class="hidden-sm"> Nouvelle</span></a></li>
+                                <li><a class="submenu" href="#/campaigns-inprogress"><i class="icon-edit"></i><span class="hidden-sm"> En cours</span></a></li>
+                                <li><a class="submenu" href="#/campaigns-done"><i class="icon-edit"></i><span class="hidden-sm"> Terminées</span></a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#/users"><i class="icon-group"></i><span class="hidden-sm"> Utilisateurs</span></a></li>
+                        <li><a href="#/chart"><i class="icon-bar-chart"></i><span class="hidden-sm"> Graphiques</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <a id="main-menu-toggle" class="hidden-xs open"><i class="icon-reorder"></i></a>
+            <!-- end: Main Menu -->
+
+
+            <!-- start: Content -->
+            <div id="content" class="col-sm-11">
+
+                <div class="row">
+                    <div ng-view></div>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+    </div><!--/container-->
+
+    <div class="clearfix"></div>
+
+    <footer>
+        <div class="container">
+                <span style="text-align:left;float:left">&copy; 2014 <a href="http://thermlabs.com" alt="Thermlabs Inc." title="Thermlabs Dashboard">Thermlabs</a></span>
+                <span class="hidden-phone" style="text-align:right;float:right">Powered by: <a href="http://admintemplates.co" alt="Bootstrap Admin Template" title="Bootstrap Admin Template">ACME Dashboard</a></span>
+        </div>
+    </footer>
+
+    <!-- start: JavaScript-->
+
+    <!--[if !IE]>-->
+
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+
+    <!--<![endif]-->
+
+    <!--[if IE]>
+
+        <script src="assets/js/jquery-1.10.2.min.js"></script>
+
+    <![endif]-->
+
+    <!--[if !IE]>-->
+
+        <script type="text/javascript">
+            window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+            </script>
+
+    <!--<![endif]-->
+
+    <!--[if IE]>
+
+        <script type="text/javascript">
+         window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+        </script>
+
+    <![endif]-->
+
+
+
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- page scripts -->
+
+
+    <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/jquery.chosen.min.js"></script>
+    <script src="assets/js/jquery.cleditor.min.js"></script>
+    <script src="assets/js/jquery.autosize.min.js"></script>
+    <script src="assets/js/jquery.placeholder.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+    <script src="assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/bootstrap-timepicker.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/jquery.hotkeys.min.js"></script>
+    <script src="assets/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="assets/js/bootstrap-colorpicker.min.js"></script
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="assets/js/excanvas.min.js"></script><![endif]-->
+    <script src="assets/js/jquery.flot.min.js"></script>
+    <script src="assets/js/jquery.flot.pie.min.js"></script>
+    <script src="assets/js/jquery.flot.stack.min.js"></script>
+    <script src="assets/js/jquery.flot.resize.min.js"></script>
+    <script src="assets/js/jquery.flot.time.min.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/retina.min.js"></script>
+    <script src="assets/js/raphael.min.js"></script>
+    <script src="assets/js/justgage.1.0.1.min.js"></script>
+
+    <!-- theme scripts -->
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/core.min.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/lodash/dist/lodash.js"></script>
+    <script src="bower_components/restangular/dist/restangular.js"></script>
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <script src="djoroDashboard.js"></script>
+    <script src="services/historyServiceMock.js"></script>
+    <script src="services/historyService.js"></script>
+    <script src="services/savingService.js"></script>
+    <script src="controllers/chart.js"></script>
+    <script src="controllers/users.js"></script>
+    <script src="controllers/dashboard.js"></script>
+    <script src="controllers/campaigns.js"></script>
+
+    <script src="assets/js/pages/form-elements.js"></script>
+    <!-- end: JavaScript-->
+
+</body>
+</html>
